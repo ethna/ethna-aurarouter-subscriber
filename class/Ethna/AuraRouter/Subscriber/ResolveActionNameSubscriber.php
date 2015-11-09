@@ -42,6 +42,13 @@ class Ethna_AuraRouter_Subscriber_ResolveActionNameSubscriber
                     require $path;
                 }, $router, $path);
             }
+
+            $path = $base_dir . DIRECTORY_SEPARATOR . "routes_overrides.php";
+            if (is_file($path)) {
+                call_user_func(function(Aura\Router\Router $router, $path) {
+                    require $path;
+                }, $router, $path);
+            }
         }
 
         $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
