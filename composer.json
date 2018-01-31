@@ -1,10 +1,9 @@
 {
     "name": "ethna/ethna-aurarouter-subscriber",
-    "version": "2.6.0-dev",
     "description": "router module for ethna.",
     "type": "library",
     "keywords": [ "framework", "ethna" ],
-    "license": "BSD-License",
+    "license": "BSD-3-Clause",
     "homepage": "https://github.com/ethna/ethna",
     "authors": [
         { "name": "Masaki Fujimoto", "email": "fujimoto@php.net", "role" : "Administrator"},
@@ -14,7 +13,6 @@
         { "name": "ethna contributors", "homepage": "https://github.com/ethna/ethna/blob/master/AUTHORS" }
     ],
     "support" : {
-        "irc": "irc://irc.freenode.org/Ethna",
         "issues": "https://github.com/ethna/ethna/issues"
     },
     "require": {
@@ -23,6 +21,11 @@
     "autoload": {
         "psr-0": {
             "Ethna": "class"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.7.x-dev"
         }
     }
 }
